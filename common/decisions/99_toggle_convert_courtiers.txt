@@ -1,0 +1,65 @@
+﻿enable_convert_courtiers_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_toggle_convert_courtiers.dds"
+	ai_check_interval = 60
+	
+	sort_order = -3
+
+	desc = enable_convert_courtiers_decision_desc
+	selection_tooltip = enable_convert_courtiers_decision_tooltip
+
+	is_shown = {
+		is_landed = yes
+		NOT = {
+			has_character_flag = wants_to_convert_courtiers
+		}
+		any_courtier = {
+			courtier_can_be_converted = yes
+			count > 0
+		}
+	}
+
+	effect = {
+		custom_tooltip = enable_convert_courtiers_decision_effect
+		hidden_effect = {
+			add_character_flag = wants_to_convert_courtiers
+		}
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+disable_convert_courtiers_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_toggle_convert_courtiers.dds"
+	ai_check_interval = 60
+	
+	sort_order = -3
+
+	desc = disable_convert_courtiers_decision_desc
+	selection_tooltip = disable_convert_courtiers_decision_tooltip
+
+	is_shown = {
+		is_landed = yes
+		has_character_flag = wants_to_convert_courtiers
+	}
+
+	effect = {
+		custom_tooltip = disable_convert_courtiers_decision_effect
+		hidden_effect = {
+			remove_character_flag = wants_to_convert_courtiers
+		}
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}

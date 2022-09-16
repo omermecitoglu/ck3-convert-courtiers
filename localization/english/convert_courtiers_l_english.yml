@@ -1,0 +1,21 @@
+﻿l_english:
+  action_convert_courtiers: "[recipient.GetShortUINameNoTooltip] can be converted"
+  action_convert_courtiers_label: "$action_convert_courtiers$"
+  action_convert_courtiers_desc: "Your [actor.Custom2('RelationToMe', recipient)] [recipient.GetShortUIName] can be converted to [actor.GetFaith.GetName|V]"
+  action_convert_courtiers_click: "#I Click to demand conversion#!"
+  action_convert_courtiers_combined_label: "[recipient.GetRelationToString( GetPlayer )], [recipient.GetShortUINameNoTooltip]"
+  action_convert_courtiers_combined_group_name: "Your courtiers can be converted"
+  action_convert_courtiers_combined_group_label: "$action_convert_courtiers_combined_group_name$"
+  action_convert_courtiers_combined_group_description: "Several of your courtiers can be converted to [actor.GetFaith.GetName|V]"
+
+  enable_convert_courtiers_decision: "Convert Courtiers #N (DISABLED)#!"
+  enable_convert_courtiers_decision_desc: "There are misguided people in your court. You may help them to open their hearts to [ROOT.Char.GetFaith.HighGodName]."
+  enable_convert_courtiers_decision_tooltip: "Enable notifications about courtiers who are not [ROOT.Char.GetFaith.GetAdjective|V]"
+  enable_convert_courtiers_decision_confirm: "Yes, we shall guide them"
+  enable_convert_courtiers_decision_effect: "#P You will be notified about courtiers who can be converted.#!"
+
+  disable_convert_courtiers_decision: "Convert Courtiers #P (ENABLED)#!"
+  disable_convert_courtiers_decision_desc: "$enable_convert_courtiers_decision_desc$"
+  disable_convert_courtiers_decision_tooltip: "Disable notifications about courtiers who are not [ROOT.Char.GetFaith.GetAdjective|V]"
+  disable_convert_courtiers_decision_confirm: "Let them worship whatever they want"
+  disable_convert_courtiers_decision_effect: "#N You won't be notified about courtiers who can be converted anymore.#!"
